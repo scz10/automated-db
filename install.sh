@@ -13,7 +13,7 @@ gdrive download $(gdrive list | grep 'oracle-database-xe-18c-1.0-1.x86_64.rpm' |
 # extract volume file
 tar -xvzf docker.tar.gz
 
-# build  docker image
+## build  docker image
 docker network create oracle_network
 git clone https://github.com/scz10/docker-oracle-xe.git
 cp oracle-database-xe-18c-1.0-1.x86_64.rpm ~/docker-oracle-xe/files/
